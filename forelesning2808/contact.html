@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt oss</title>
   </head>
+
   <body>
     <header>
-      <a href="index.html"><h1>TV</h1></a>
+      <a href="index.html">
+        <h1>TV</h1>
+      </a>
       <nav>
         <ul>
           <li>
-             <a href="index.html">Hjem</a>
+            <a href="index.html">Hjem</a>
           </li>
           <li>
             <a href="https://www.google.com" target="_blank">Google</a>
@@ -28,6 +31,59 @@
     <main>
       <section>
         <h2>Kontakt oss</h2>
+      </section>
+      <section>
+        <h2>Ta kontakt med oss i dag</h2>
+        <form method="post">
+          <label for="navn">Navn:</label>
+          <input
+            type="text"
+            name="Navn"
+            placeholder="Nora Normann"
+            id="navn"
+            maxlength="45"
+            required
+          />
+          <label>
+            E-post:
+            <input
+              type="email"
+              name="email"
+              placeholder="eksempel@epost.no"
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              required
+            />
+          </label>
+          <label>
+            <input type="text" name="emne" placeholder="hva handler det om?">
+          </label>
+          <label>
+            Melding:
+            <textarea name="melding" required></textarea>
+          </label>
+          <label>
+            Nei
+            <input type="radio" name="valg" />
+          </label>
+          <label>
+            Ja
+            <input type="radio" name="valg" />
+          </label>
+          <label>
+            Kanskje
+            <input type="radio" name="valg" />
+          </label>
+          <input type="submit" value="Send melding" />
+          <label>
+            Favorittmat
+            <select name="fav">
+              <option value="Pizza">Pizza</option>
+              <option value="Hamburger">Hamburger</option>
+              <option value="Taco">Taco</option>
+              <option value="Kebab">Kebab</option>
+            </select>
+          </label>
+        </form>
       </section>
     </main>
     <footer>2024 Kristine</footer>
