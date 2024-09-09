@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="utf-8">
+        <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> HTML5 Øvelse</title>
+    </head>
+    <body>
+        <header>
+            <h1>HTML5</h1>
+              <nav>
+                  <ul>
+                    <li>
+                        <a href="index.html">Forside</a>
+                    </li>
+                    <li>
+                        <a href="valideringsoppgave.html">Valideringsoppgave</a>
+                    </li>
+                    <li>
+                        <a href="nettsidemal.html">Nettside-mal</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">Kontakt oss</a>
+                    </li>
+                  </ul>
+                  <form>
+                    <label for="navn">Navn</label>
+                    <input type="text" placeholder="Navn" id="navn"
+                    pattern="[A-Za-zæøåÆØÅ ]{2,}" required><br>
+
+                    <label for="email">E-post</label>
+                    <input type="email" placeholder="eks@email.no" id="email" required><br>
+
+                    <label for="password">Passord:</label>
+                    <input type="password" id="password" minlength="8" 
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
+
+                    <label for="alder">Alder</label>
+                    <input type="number" min="18" max="99" id="alder" required><br>
+
+                    <label for="telefon">Telefonnummer</label>
+                    <input type="text" pattern="[0-9]{8,12}" id="telefon" required><br>
+
+                    <label for="dato">Fødselsdato</label>
+                    <input type="date" max="2023-12-31" id="dato" required><br>
+
+                    
+                    <p>Kjønn:</p>
+                    <label for="kvinne">Kvinne</label>
+                    <input type="radio" id="kvinne" name="kjønn" value="kvinne" required>
+                    <label for="mann">Mann</label>
+                    <input type="radio" id="mann" name="kjønn" value="mann">
+                    <label for="annet">Annet</label>
+                    <input type="radio" id="annet" name="kjønn" value="annet"><br>
+
+                    <label for="land">Velg land</label>
+                    <select name="land" id="land" required>
+                      <option value="">Velg land</option>
+                      <option value="norge">Norge</option>
+                      <option value="sverige">Sverige</option>
+                      <option value="danmark">Danmark</option>
+                    </select><br>
+                    
+                    <label for="personvern">Jeg har lest og godkjent personvernsærkleringen</label>
+                    <input type="checkbox" id="personvern" name="personvern" required><br>
+
+                    <input type="submit" value="Submit"><br>
+                  </form>
+              </nav>
+    </header>
+    <main>
+    </main>
+        <footer>
+            <p>Kontakt meg på epost: <a href="mailto:krmo@hiof.com"> Epost</a></p>
+            <p>Kristine 2024</p>
+         </footer>
+    </body>
+</html>
