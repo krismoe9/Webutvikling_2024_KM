@@ -24,45 +24,57 @@
                     </li>
                   </ul>
                   <form>
-                    <label for="navn">Navn</label>
-                    <input type="text" placeholder="Navn" id="navn"
-                    pattern="[A-Za-zæøåÆØÅ ]{2,}" required><br>
+                    <label>
+                        <input type="text" placeholder="Navn" id="navn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                    </label>
 
-                    <label for="email">E-post</label>
-                    <input type="email" placeholder="eks@email.no" id="email" required><br>
+                    <label>
+                        <input type="email" placeholder="eks@email.no" id="email" required>
+                    </label><br>
 
-                    <label for="password">Passord:</label>
-                    <input type="password" id="password" minlength="8" 
-                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
+                    <label>
+                        <input type="password" id="password" minlength="8" 
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    </label>
+                
+                    <label>
+                        <input type="number" min="18" max="99" id="alder" required>
+                    </label>
+                    
+                    <label>
+                        <input type="text" pattern="[0-9]{8,12}" id="telefon" required>
+                    </label>
+                    
 
-                    <label for="alder">Alder</label>
-                    <input type="number" min="18" max="99" id="alder" required><br>
-
-                    <label for="telefon">Telefonnummer</label>
-                    <input type="text" pattern="[0-9]{8,12}" id="telefon" required><br>
-
-                    <label for="dato">Fødselsdato</label>
-                    <input type="date" max="2023-12-31" id="dato" required><br>
-
+                    <label>
+                        <input type="date" max="2023-12-31" id="dato" required>
+                    </label>
                     
                     <p>Kjønn:</p>
-                    <label for="kvinne">Kvinne</label>
-                    <input type="radio" id="kvinne" name="kjønn" value="kvinne" required>
-                    <label for="mann">Mann</label>
-                    <input type="radio" id="mann" name="kjønn" value="mann">
-                    <label for="annet">Annet</label>
-                    <input type="radio" id="annet" name="kjønn" value="annet"><br>
-
-                    <label for="land">Velg land</label>
-                    <select name="land" id="land" required>
-                      <option value="">Velg land</option>
-                      <option value="norge">Norge</option>
-                      <option value="sverige">Sverige</option>
-                      <option value="danmark">Danmark</option>
-                    </select><br>
+                    <label>
+                        <input type="radio" id="kvinne" name="kjønn" value="kvinne" required>
+                    </label>
                     
-                    <label for="personvern">Jeg har lest og godkjent personvernsærkleringen</label>
-                    <input type="checkbox" id="personvern" name="personvern" required><br>
+                    <label>
+                        <input type="radio" id="mann" name="kjønn" value="mann">
+                    </label>
+
+                    <label>
+                        <input type="radio" id="annet" name="kjønn" value="annet"><br>
+                    </label>
+
+                    <label>
+                        <select name="land" id="land" required>
+                        <option value="">Velg land</option>
+                        <option value="norge">Norge</option>
+                        <option value="sverige">Sverige</option>
+                        <option value="danmark">Danmark</option>
+                        </select>
+                    </label>
+                    
+                    <label>
+                        <input type="checkbox" id="personvern" name="personvern" required>
+                    </label>
 
                     <input type="submit" value="Submit"><br>
                   </form>
