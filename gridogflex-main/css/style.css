@@ -22,7 +22,7 @@ body{
 }
 
 #logo{
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -62,6 +62,9 @@ body{
 #mansory-grid{
     grid-column: 2/3;
     grid-row: 2/3;
+    display: grid;
+    margin: auto;
+    gap: 1rem;
 }
 
 footer{
