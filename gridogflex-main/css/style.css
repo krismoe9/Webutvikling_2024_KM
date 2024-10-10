@@ -3,6 +3,67 @@ body{
     background-color: #f0ece9;
 }
 
+#grid-container{
+    display: grid;
+    grid-template-columns: 0,5fr 3fr 0,5fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 1rem;
+
+}
+
+.header{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#logo{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav li{
+    margin: 1rem;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+#mansory-grid{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+footer{
+    grid-column: 1/4;
+    grid-row: 4/4;
+}
+
+#footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #natur, #science, #animal, #tech, #culture, #history, #geo, #food{
     padding:3rem;
@@ -11,6 +72,8 @@ body{
 
 #natur{
         background-color: hsl(146, 52%, 72%);
+        grid-column: 2/3;
+        grid-row: 2/3;
 
     }
     
