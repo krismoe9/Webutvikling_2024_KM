@@ -1,8 +1,18 @@
 @use 'layout.scss';
 @use 'login.scss';
-@import 'colors.scss';
+@use 'colors' as *; /* bruk * hvis du skriver koden selv, c hvis du henter kode*/
+/*unngå å bruke import da det skal avikles*/
+@use 'fonts' as *;
+
+*{
+    box-sizing: border-box;
+} /*Dette setter en konsekvent box-sizing-modell gjennom hele dokumentet 
+eller applikasjonen din, noe som fører til færre uventede oppsettproblemer.*/
 
 body{
     background-color: $blue;
     height: 100vh;
+    font-family: $mainFont;
+    background-image: url('https://picsum.photos/200/300');
+    background-size: cover;
 }

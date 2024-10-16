@@ -1,26 +1,76 @@
-.flex-container-center {
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.flex-container-center, form label i {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
-form {
-  background-color: #fff;
-  padding: 3rem;
-  color: rgb(35, 35, 35);
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  border-radius: 30px;
-  gap: 0.5rem;
-}
-form input {
-  padding: 1rem;
-  border: 1px solid rgb(35, 35, 35);
+.blurred-effect, form {
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
+form { /*bakgrunn til registreringsskjema*/
+  /*arver det som står i regelsettet til .blurred-effect*/
+  color: rgb(35, 35, 35);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  padding: 3rem;
+  border-radius: 30px;
+}
+form label { /*registreringsskjema*/
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  background-color: #fff;
+}
+form label i { /* ikoner*/
+  width: 100%;
+  max-width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+  border-radius: 100%;
+  display: flex !important; /* flytter ikonene til senter av boksen rundt*/
+  width: 50px;
+  background-color: rgb(35, 35, 35); /*bakgrunnsfarge bak ikonene*/
+  color: #fff; /* forandrer fargen på ikonene */
+}
+form label input { /* boks rundt epost og passord, none fjerner default boks*/
+  border: none;
+}
+form input {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgb(35, 35, 35);
+}
+
+/* bruk * hvis du skriver koden selv, c hvis du henter kode*/
+/*unngå å bruke import da det skal avikles*/
+* {
+  box-sizing: border-box;
+} /*Dette setter en konsekvent box-sizing-modell gjennom hele dokumentet 
+eller applikasjonen din, noe som fører til færre uventede oppsettproblemer.*/
 body {
   background-color: rgb(53, 101, 167);
   height: 100vh;
+  font-family: "Roboto", "sans-serif";
+  background-image: url("https://picsum.photos/200/300");
+  background-size: cover;
 }/*# sourceMappingURL=main.css.map */
