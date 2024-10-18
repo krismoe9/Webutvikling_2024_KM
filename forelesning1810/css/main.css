@@ -53,8 +53,8 @@
     grid-template-columns: 0.5fr 2fr;
     grid-template-rows: repeat(3, auto);
   }
-  #global-header {
-    grid-column: 1/2; /*1/2 er en stringverdi, altså ren tekst*/
+  #main-grid #global-header {
+    grid-column: 1/3; /*1/3 er en stringverdi, altså ren tekst*/
     grid-row: 1/2;
     /*"1/2" er en stringverdi, altså ren tekst, hvis du ikke bruker "" så blir 1/2 et mattestykke*/
   }

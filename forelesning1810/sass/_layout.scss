@@ -62,11 +62,13 @@
     #main-grid{
         grid-template-columns: 0.5fr 2fr;
         grid-template-rows: repeat(3, auto);
+        
+        #global-header{
+            @include grid-placement("1/3", "1/2"); /*"1/2" er en stringverdi, altså ren tekst, hvis du ikke bruker "" så blir 1/2 et mattestykke*/
+        }
     }
 
-    #global-header{
-        @include grid-placement("1/2", "1/2"); /*"1/2" er en stringverdi, altså ren tekst, hvis du ikke bruker "" så blir 1/2 et mattestykke*/
-    }
+
 
     main{
         @include grid-placement("1/2", "3/4");
