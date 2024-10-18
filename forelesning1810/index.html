@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ikoner/css/solid.css">
+    <link rel="stylesheet" href="ikoner/css/fontawesome.css"> 
+    <link rel="stylesheet" href="ikoner/css/brands.css">
+    <link rel="stylesheet" href="css/main.css"> <!--denne linken skal alltid være nederst-->
+    <title>Forside</title>
+</head>
+<body>
+    <div id="main-grid">
+    <header id="global-header">
+        <form> <!--Søkefelt-->
+            <label>
+                Søk
+                <i class="fa-solid fa-magnifying-glass"></i> <!--Link til ikon, henter opp ønsket ikon-->
+                <input type="search" placeholder=" Her kan du søke..."> <!-- Placeholder er for eksempeltekst som forsvinner når du skriver inn, aldri bruk placeholder for å erstatte label-->
+            </label>
+        </form>
+        <a href="index.html" id="logo"> <!-- a taggen gjør bildet til en link-->
+            <img src="https://picsum.photos/id/40/100/100" alt="logo">
+        </a>
+        <ul> <!-- ul kan kun ha li som barneelementer-->
+            <li><i class="fa-solid fa-user"></i></li>
+            <li><i class="fa-solid fa-heart"></i></li>
+            <li><i class="fa-solid fa-cart-shopping"></i></li>
+
+        </ul>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Hjem</a></li> <!-- a taggen blir brukt til navigering-->
+            <li><a href="#">Blogg</a></li>
+            <li><a href="#">Produkter</a></li>
+            <li><a href="#">Tjenester</a></li>
+            <li><a href="#">Om oss</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Nyheter</a></li>
+            </li>
+        </ul>
+    </nav>
+    <!--Video by <a href="https://pixabay.com/users/xbriantcx-36275440/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=233024">Brian Tinco Custodio</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=233024">Pixabay</a>-->
+    <main>
+        <section id="video-banner">
+            <header> <!-- bruker header her for en mer sematnisk kode -->
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <a href="#" class="btn">Les mer</a> <!--Bruker classe på knapp fordi knappen skal brukes flere ganger-->
+            </header>
+            <video autoplay loop muted> <!-- autoplay for automatisk avspilling av video, loop for at videoen skal loope, muted betyr at videoen skal spilles av uten lyd-->
+                <source src="ressurser/eplekake.mp4" type="video/mp4">
+                Nettleseren støtter ikke videoformatet
+            </video>
+        </section>
+        <section>
+            <h2>Excepteur sint occaecat</h2>
+            <article>
+                <h3>Duis aute irure</h3>
+            </article>
+            <article>
+                <h3>Duis aute irure</h3>
+            </article>
+            <article>
+                <h3>Duis aute irure</h3>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-pinterest"></i></li>
+        </ul>
+    </footer>
+    </div>
+</body>
+</html>
+

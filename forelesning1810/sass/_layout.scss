@@ -1,0 +1,79 @@
+@mixin grid-placement($column, $row){
+    grid-column: #{$column}; /*#{$column} er en stringverdi, altså ren tekst*/
+    grid-row: #{$row};
+}
+
+.flex-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#main-grid{
+    display: grid;
+    grid-template-columns: 1fr; /* 1fr fordi det er designet etter mobile first*/
+    grid-template-rows: repeat(4, auto);
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto; /* 0 margin, auto betyr at det blir like mye luft på begge sider*/
+
+
+    #global-header{
+        @include grid-placement("1/2", "1/2"); /*"1/2" er en stringverdi, altså ren tekst, hvis du ikke bruker "" så blir 1/2 et mattestykke*/
+        @extend .flex-list;
+        align-items: center;
+
+        ul{
+            @extend .flex-list;
+            list-style: none;
+            gap: 1rem;
+        }
+    }
+
+    nav{
+        @include grid-placement("1/2", "2/3");
+    }
+
+    main{
+        @include grid-placement("1/2", "3/4");
+    }
+
+    footer{
+        @include grid-placement("1/2", "4/5"); /* "4/5" betyr at den begynner på radlinje 4 og slutter på radlinje 5*/
+        
+        ul{
+            @extend .flex-list;
+            list-style: none;
+            justify-content: center;
+            gap: 1rem;
+
+            i{
+                font-size: 20px;
+            }
+        }
+        
+    }
+}
+
+
+
+@media only screen and (min-width: 800px){
+
+    #main-grid{
+        grid-template-columns: 0.5fr 2fr;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    #global-header{
+        @include grid-placement("1/2", "1/2"); /*"1/2" er en stringverdi, altså ren tekst, hvis du ikke bruker "" så blir 1/2 et mattestykke*/
+    }
+
+    main{
+        @include grid-placement("1/2", "3/4");
+    }
+
+    footer{
+        @include grid-placement("1/2", "4/5"); /* "4/5" betyr at den begynner på radlinje 4 og slutter på radlinje 5*/
+    }
+
+}
