@@ -184,7 +184,7 @@ main section form{
 #more{
     padding: 0 5rem;
 	display: grid;
-    /*Kan skrives anderledes, jeg har valgt 6 kolonner og 6 rader,
+    /*Kan skrives annerledes, jeg har valgt 6 kolonner og 6 rader,
     dette er noe dere kan velge selv*/
 	grid-template-columns: repeat(6, /*........*/);
 	grid-template-rows: repeat(6, /*........*/);
@@ -193,85 +193,128 @@ main section form{
 
 #more h2 {
     text-align: center;
+    justify-content: center;
+    grid-column: 3/5;
+    grid-row: 1/2;
     
 }
 
 #box-1{
-	
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-content: stretch;
 }
 
 #box-2{
-	
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 #box-3{
-	
+    grid-column: 3/4;
+    grid-row: 2/4;
+    justify-content: stretch;
 }
 
 
 #box-4{
-	
-
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;	
 }
 
-#box-5{
-	
-
+#box-5{ 
+    grid-column-start: 5;
+    grid-column-end: 6;	
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
 #box-6{
-
-	
+    grid-column-start: 6;
+    grid-column-end: 7;	
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 #box-7 {
-	
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
 
-    
 }
 
 #box-8 {
-	
-
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 #box-9 {
-
-    
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    justify-content: center;
+    align-items: end;
 }
 
 #box-10 {
-
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
     
 }
 
 #box-11 {
-
-    
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 6; 
+    justify-content: center;
+    align-items: center;   
 }
 
 #box-12 {
-
-    
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;  
 }
 
 #box-13 {
-
-    
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
 
 #box-14 {
-
-    
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
 
 #box-15 {
-
-    
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
 #box-16 {
-
-    
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;    
 }
 #more img{
     max-width: 300px;
