@@ -6,29 +6,44 @@
   grid-template-rows: auto;
   width: 100%;
 }
+.grid-container header {
+  height: 150px;
+  display: grid;
+}
+.grid-container header a {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: row;
+}
+.grid-container header .logo img {
+  display: grid;
+  border-radius: 50%;
+  justify-content: center;
+}
+.grid-container nav {
+  position: fixed;
+  bottom: 10%;
+  justify-content: center;
+}
+.grid-container nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+.grid-container main {
+  display: grid;
+}
+.grid-container main header {
+  height: 150px;
+}
 
 body {
   font-family: "Thasadith", sans-serif;
   margin: 0;
   padding: 0;
-}
-
-header a {
-  display: grid;
-  justify-content: center;
-  align-items: row;
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-nav ul {
-  list-style: none;
-}
-
-.logo img {
-  display: grid;
-  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */
