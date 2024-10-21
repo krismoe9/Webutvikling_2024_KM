@@ -3,50 +3,48 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     width: 100%;
+}
+
+header{
+    height: 150px;
+    display: grid;
+
+    a{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        align-items: row;
+    }
+
+    .logo img{
+        display: grid;
+        border-radius: 50%;
+        justify-content: center;
+    }    
+}
+
+nav{
+    position: fixed;
+    bottom: 10%;
+    justify-content: center;
+
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+main{
+    display: grid;
+
 
     header{
         height: 150px;
-        display: grid;
-    
-        a{
-            display: grid;
-            justify-content: center;
-            align-content: center;
-            align-items: row;
-        }
-    
-        .logo img{
-            display: grid;
-            border-radius: 50%;
-            justify-content: center;
-        }    
-    }
-    
-    nav{
-        position: fixed;
-        bottom: 10%;
-        justify-content: center;
-    
-        ul{
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-content: center;
-            margin: 0;
-            padding: 0;
-        }
-    }
-    
-    main{
-        display: grid;
-    
-    
-        header{
-            height: 150px;
-        }
-    
     }
 
 }
-
