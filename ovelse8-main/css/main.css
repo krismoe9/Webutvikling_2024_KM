@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  width: 100%;
+}
+
+body {
+  font-family: "Thasadith", sans-serif;
+}
+
+.logo img {
+  display: grid;
+  justify-content: center;
+  border-radius: 50%;
+}/*# sourceMappingURL=main.css.map */

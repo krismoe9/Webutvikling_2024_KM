@@ -1,0 +1,16 @@
+@use 'variables' as *;
+@use 'base' as *;
+@use 'mixins' as *;
+
+
+body{
+    font-family: $mainFont;
+}
+
+
+.logo img{
+    display: grid;
+    justify-content: center;
+    border-radius: 50%;
+}
+
