@@ -1,7 +1,8 @@
 #welcome-banner{
-    background-image: ('https://picsum.photos/200/300');
+    background-image: url('https://picsum.photos/200/300');
     font-family: $mainFont;
     font-weight: bold;
-    display: grid;
+    border-radius: 15px;
+    display: flex;
     justify-content: center;
 }
