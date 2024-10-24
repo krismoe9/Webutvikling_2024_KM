@@ -1,7 +1,7 @@
-@use 'variables' as *;
-@use 'base' as *;
-@use 'mixins' as *;
-@use 'banner' as *;
+@import 'variables' as *;
+@import 'base' as *;
+@import 'mixins' as *;
+@import 'banner' as *;
 
 *{
     box-sizing: border-box;
